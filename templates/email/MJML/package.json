@@ -1,0 +1,16 @@
+{
+  "name": "Mjml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/mjml layout.mjml -o ../base.html.twig"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mjml": "^4.0.0",
+    "mjml-raw": "^4.0.0"
+  }
+}

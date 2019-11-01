@@ -1,0 +1,37 @@
+nelmio_api_doc:
+    documentation:
+        schemes: [https, http]
+        info:
+            title: TMG Feedback Bot API
+            description: 'Test session codes:
+                            <br>
+                            <br>
+                            200000 - valid session code
+                            <br>
+                            200100 - valid session code but collect_contact_data: false
+                            <br>
+                            400000 - invalid session code
+                            <br>
+                            403000 - expired session code'
+            version: 1.0.0
+        securityDefinitions:
+            bearer:
+                type: apiKey
+                description: 'Value: Bearer {jwt}'
+                name: Authorization
+                in: header
+            cookie:
+                type: apiKey
+                description: 'Cookie name "session_token" used on the non-API part of the site.'
+                name: session_token
+                in: cookie
+        security:
+            - bearer: []
+    areas:
+        default:
+            path_patterns:
+                - ^/api/sessions
+                - ^/api/questions
+                - ^/api/subscribe
+                - ^/api/terms
+                - ^/api/policy

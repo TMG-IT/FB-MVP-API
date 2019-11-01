@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="form">
+
+      <h2 class="main__title">Login form</h2>
+
+      {% if error %}
+          <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+      {% endif %}
+
+      {{ form(loginForm) }}
+
+      <a href="{{ path('password_reset_request') }}" class="form__link">I forgot my password</a>
+    </div>
+{% endblock %}

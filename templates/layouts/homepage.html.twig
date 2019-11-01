@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+  <div class="header__bar">
+    <h1 class="main__title">Homepage</h1>
+    <div class="header__bar--right">
+      <p class="txt">Logged in as <span class="txt--green">{{ app.user.email }}</span></p>
+      <p><a href="/logout" class="form__link">Logout</a></p>
+    </div>
+  </div>
+
+{% endblock body %}

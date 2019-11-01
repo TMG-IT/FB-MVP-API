@@ -1,0 +1,25 @@
+App\Entity\Session:
+  session_1:
+    session_code: 200000
+    status: 'valid'
+    coach: <coach()>
+    session_name: 'Metal workshop'
+    collectContactData: true
+  session_2:
+    session_code: 400000
+    status: 'invalid'
+    coach: <coach()>
+    session_name: 'Woodworking'
+    collectContactData: false
+  session_3:
+    session_code: 403000
+    status: 'expired'
+    coach: <coach()>
+    session_name: 'Microcontrollers'
+    collectContactData: false
+  session_4:
+    session_code: 200100
+    status: 'valid'
+    coach: <coach()>
+    session_name: 'Advanced Metal workshop'
+    collectContactData: false

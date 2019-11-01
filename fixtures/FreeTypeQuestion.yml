@@ -1,0 +1,67 @@
+App\Entity\Question\FreeTypeQuestion:
+    free_type_question_1:
+        text: 'Any other thoughts on the workout?'
+        session: '@session_1'
+        isPrompt: false
+        isNamePrompt: false
+        priority: 8
+    free_type_question_2:
+        text: 'Hello! Can I start by asking your name?'
+        session: '@session_1'
+        isPrompt: true
+        isNamePrompt: true
+        priority: -3
+    free_type_question_3:
+        text: 'Any other thoughts on the workout?'
+        session: '@session_4'
+        isPrompt: false
+        isNamePrompt: false
+        priority: 8
+    free_type_question_4:
+        text: 'Hello! Can I start by asking your name?'
+        session: '@session_4'
+        isPrompt: true
+        isNamePrompt: true
+        priority: -3
+    free_type_question_5:
+        text: 'Thanks, {{nickname}}.'
+        session: '@session_1'
+        isPrompt: true
+        isNamePrompt: false
+        skipAnswer: true
+        priority: 0
+    free_type_question_6:
+        text: 'Thanks, {{nickname}}.'
+        session: '@session_4'
+        isPrompt: true
+        isNamePrompt: false
+        skipAnswer: true
+        priority: 0
+    free_type_question_7:
+        text: 'First statement:'
+        session: '@session_1'
+        isPrompt: true
+        isNamePrompt: false
+        skipAnswer: true
+        priority: 2
+    free_type_question_8:
+        text: 'First statement:'
+        session: '@session_4'
+        isPrompt: true
+        isNamePrompt: false
+        skipAnswer: true
+        priority: 2
+    free_type_question_9:
+        text: 'Thanks, {{nickname}}.'
+        session: '@session_1'
+        isPrompt: true
+        isNamePrompt: false
+        skipAnswer: true
+        priority: 7
+    free_type_question_10:
+        text: 'Thanks, {{nickname}}.'
+        session: '@session_4'
+        isPrompt: true
+        isNamePrompt: false
+        skipAnswer: true
+        priority: 7

@@ -1,0 +1,29 @@
+monolog:
+    handlers:
+        main:
+            type: fingers_crossed
+            activation_strategy: 'App\Monolog\ActivationStrategy'
+            handler: grouped_main
+        grouped_main:
+            type: group
+            members: [sentry, streamed_main]
+        streamed_main:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+        sentry:
+            type: raven
+            dsn: '%env(SENTRY_DSN)%'
+            level: error
+        console:
+            type: console
+            process_psr_3_messages: false
+            channels: ["!event", "!doctrine"]
+        deprecation:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%.deprecations.log"
+        deprecation_filter:
+            type: filter
+            handler: deprecation
+            max_level: info
+            channels: ["php"]

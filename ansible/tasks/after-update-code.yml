@@ -1,0 +1,17 @@
+- name: .env shenaningans
+  stat:
+    path: "{{ ansistrano_shared_path }}/.env"
+  register: dotenv
+
+- name: create shared/.env if not exists
+  copy: 
+    src: "{{ playbook_dir }}/.env.dist"
+    dest: "{{ ansistrano_shared_path }}/.env"
+  when: not dotenv.stat.exists
+
+
+- name: composer install
+  shell: /usr/bin/php7.3 /usr/bin/composer install --optimize-autoloader --no-dev --no-interaction --no-progress --no-suggest --no-scripts
+  args:
+    chdir: "{{ ansistrano_release_path.stdout }}"
+    

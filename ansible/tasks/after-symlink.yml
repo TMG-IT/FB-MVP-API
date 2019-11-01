@@ -1,0 +1,9 @@
+# - name: run migrations
+#   shell: bin/console doctrine:migrations:migrate --no-interaction
+#   args:
+#     chdir: "{{ ansistrano_release_path.stdout }}"
+
+- name: cache warmup
+  shell: bin/console cache:warmup --no-interaction --no-debug
+  args:
+    chdir: "{{ ansistrano_release_path.stdout }}"

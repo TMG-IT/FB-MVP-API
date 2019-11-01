@@ -1,0 +1,72 @@
+App\Entity\Question\ChoiceQuestion:
+    choice_question_1:
+        text:  '"I felt actively involved in the workout."'
+        session: '@session_1'
+        isPrompt: false
+        priority: 3
+
+    choice_question_2:
+        text:  '"The content was relevant to me."'
+        session: '@session_1'
+        isPrompt: false
+        priority: 4
+
+    choice_question_3:
+        text:  '"I will use what I have learned."'
+        session: '@session_1'
+        isPrompt: false
+        priority: 5
+
+    choice_question_4:
+        text:  '"I’d recommend this workout to others."'
+        session: '@session_1'
+        isPrompt: false
+        priority: 6
+    choice_question_5:
+        text: 'Thanks {{nickname}}. Ok, first feedback question coming up.'
+        session: '@session_1'
+        isPrompt: true
+        buttonText: "Ok, I'm ready"
+        priority: -2
+
+    choice_question_6:
+        text:  '"I felt actively involved in the workout."'
+        session: '@session_4'
+        isPrompt: false
+        priority: 3
+
+    choice_question_7:
+        text:  '"The content was relevant to me."'
+        session: '@session_4'
+        isPrompt: false
+        priority: 4
+
+    choice_question_8:
+        text:  '"I will use what I have learned."'
+        session: '@session_4'
+        isPrompt: false
+        priority: 5
+
+    choice_question_9:
+        text:  '"I’d recommend this workout to others."'
+        session: '@session_4'
+        isPrompt: false
+        priority: 6
+    choice_question_10:
+        text: 'Thanks {{nickname}}. Ok, first feedback question coming up.'
+        session: '@session_4'
+        isPrompt: true
+        buttonText: "Ok, I'm ready"
+        priority: -2
+    choice_question_11:
+        text: 'Next, I’m now going to show you four statements.  For each, just choose the answer that feels right.  You can be completely honest.'
+        session: '@session_1'
+        isPrompt: true
+        buttonText: "Ok, let’s go."
+        priority: 1
+    choice_question_12:
+        text: 'Next, I’m now going to show you four statements.  For each, just choose the answer that feels right.  You can be completely honest.'
+        session: '@session_4'
+        isPrompt: true
+        buttonText: "Ok, let’s go."
+        priority: 1

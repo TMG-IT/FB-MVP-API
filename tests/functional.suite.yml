@@ -1,0 +1,25 @@
+# Codeception Test Suite Configuration
+#
+# Suite for functional tests
+# Emulate web requests and make application process them
+# Include one of framework modules (Symfony2, Yii2, Laravel5) to use it
+# Remove this suite if you don't use frameworks
+
+actor: FunctionalTester
+modules:
+    enabled:
+        - Asserts
+        - \App\Tests\Helper\Unit
+        - \App\Tests\Helper\Functional
+        - WebDriver
+        - Cli
+        - Symfony:
+            app_path: src
+            part: SERVICES
+    config:
+          WebDriver:
+              url: '%env(resolve:TEST_URL)%'
+              browser: phantomjs
+              window_size: 600x900
+              capabilities:
+                webStorageEnabled: true

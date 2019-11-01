@@ -1,0 +1,55 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Helvetica"></mj-all>
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f6f6f6">
+    <mj-raw>
+      <!-- Company Header -->
+    </mj-raw>
+    <mj-section background-color="#a9a9a9" padding-top="10px" padding-bottom="10px">
+      <mj-column>
+        <mj-text font-size="20px" color="#ffffff">
+          Q Symfony skeleton
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>{% block email_body %}</mj-raw>
+    <mj-raw>
+      <!-- Main body -->
+    </mj-raw>
+    <mj-section background-color="#ffffff" padding="20px">
+      <mj-column>
+        <mj-text>
+          <h1>{{ email_body_title }}</h1> {{ email_body_text|raw }}</mj-text>
+        <mj-raw>
+          <tr>
+            <td style="word-wrap:break-word;font-size:0px;padding:10px 25px;" align="left">
+              <div>
+                <!--[if mso]>
+                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ button_url }}" style="height:55px;v-text-anchor:middle;width:226px;" stroke="f" fillcolor="#90bf48">
+                  <w:anchorlock/>
+                  <center>
+                <![endif]--><a href="{{ button_url }}" style="background-color:#a9a9a9;color:#ffffff;display:inline-block;font-family:'Helvetica';font-size:13px;font-weight:bold;line-height:55px;text-align:center;text-decoration:none;width:226px;-webkit-text-size-adjust:none;text-transform:uppercase;">{{ button_text }}</a>
+                <!--[if mso]>
+                  </center>
+                </v:rect>
+                <![endif]-->
+              </div>
+            </td>
+          </tr>
+        </mj-raw>
+        <mj-text padding="0 25px 10px">{{ email_body_bottom_text|raw }}</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw>{% endblock email_body %}</mj-raw>
+    <mj-wrapper padding-top="0">
+      <mj-section full-width="full-width" background-color="#f6f6f6" padding-top="0" padding-bottom="0px">
+        <mj-column>
+          <mj-text align="center" font-family="Helvetica">Q Symfony skeleton</mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>

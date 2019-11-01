@@ -1,0 +1,21 @@
+security:
+    firewalls:
+        dev:
+            pattern: ^/((_(profiler|wdt|swagger)|css|images|js)/|docs)
+            security: false
+
+        cors:
+            security: false
+            pattern: ^/
+            methods: [OPTIONS]
+
+        api:
+            anonymous: true
+            security: false
+            pattern: ^/api
+            stateless: true
+#            guard:
+#                entry_point: App\Security\HeaderAuthenticator
+#                authenticators:
+#                    - App\Security\HeaderAuthenticator
+#                    - App\Security\CookieAuthenticator

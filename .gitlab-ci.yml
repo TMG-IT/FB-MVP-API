@@ -1,0 +1,16 @@
+stages:
+  - deploy
+deploy to staging:
+  stage: deploy
+  environment:
+    name: staging
+  script:
+    - echo "Deploy to staging server..."
+    - cd /var/www/staging/mind-gym-fb-api.q-tests.com
+    - git pull
+#    - ./vendor/bin/codecept run --debug # Run tests only on internal dev environment
+    - ./setup-dev.sh
+  only:
+  - staging
+  tags:
+  - plain

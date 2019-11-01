@@ -1,0 +1,6 @@
+[staging]
+213.186.4.75 ansible_ssh_user=www-data
+
+[production]
+
+

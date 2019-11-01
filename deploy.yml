@@ -1,0 +1,32 @@
+---
+- name: Deploy to whatever
+  hosts: "{{ host | default('staging') }}"
+
+  vars:
+    ansistrano_deploy_via: rsync
+    ansistrano_rsync_extra_params: "--chmod=D0755" #,--chmod=F0644"
+    ansistrano_deploy_from: "{{ playbook_dir }}/"
+    ansistrano_deploy_to: "{{ www_dir }}"
+    # ansistrano_deploy_to: "/var/www/ks.q-tests.com"
+    ansistrano_version_dir: "releases"
+    ansistrano_current_dir: "current"
+    ansistrano_current_via: "symlink"
+    ansistrano_keep_releases: 3
+    ansistrano_shared_paths: 
+    - var/log
+    - var/sessions
+    - public/uploads
+    ansistrano_shared_files:
+    - .env
+    # ansistrano_before_setup_tasks_file: "{{ playbook_dir }}/ansible/tasks/before-setup.yml"
+    # ansistrano_after_setup_tasks_file: "{{ playbook_dir }}/ansible/tasks/after-setup.yml"
+    # ansistrano_before_update_code_tasks_file: "{{ playbook_dir }}/ansible/tasks/before-update-code.yml"
+    ansistrano_after_update_code_tasks_file: "{{ playbook_dir }}/ansible/tasks/after-update-code.yml"
+    # ansistrano_before_symlink_tasks_file: "{{ playbook_dir }}/ansible/tasks/before-symlink.yml"
+    ansistrano_after_symlink_tasks_file: "{{ playbook_dir }}/ansible/tasks/after-symlink.yml"
+    ansistrano_before_cleanup_tasks_file: "{{ playbook_dir }}/ansible/tasks/before-cleanup.yml"
+    ansistrano_after_cleanup_tasks_file: "{{ playbook_dir }}/ansible/tasks/after-cleanup.yml"
+    ansistrano_allow_anonymous_stats: no
+
+  roles:
+  - ansistrano.deploy

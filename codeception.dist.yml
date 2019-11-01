@@ -1,0 +1,30 @@
+namespace: App\Tests
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+        - App\Tests\Phantoman
+    config:
+        App\Tests\Phantoman:
+            path: 'bin/phantomjs'
+            debug: true
+            sslProtocol: any
+            ignoreSslErrors: true
+params:
+    - .env
+modules:
+   enabled:
+      - Db:
+         dsn: 'mysql:host=localhost;dbname=tmg'
+         user: 'root'
+         password: ''
+         populate: false
+         cleanup: fale
+         populator: 'php bin/console do:sc:dr --force && php bin/console do:sc:cr && php bin/console ha:fi:lo -n'
+

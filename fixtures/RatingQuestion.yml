@@ -1,0 +1,11 @@
+App\Entity\Question\RatingQuestion:
+    rating_question_5:
+        text:  'Overall, how would you rate this workout?'
+        session: '@session_1'
+        isPrompt: false
+        priority: -1
+    rating_question_6:
+        text:  'Overall, how would you rate this workout?'
+        session: '@session_4'
+        isPrompt: false
+        priority: -1

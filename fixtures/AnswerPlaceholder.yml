@@ -1,0 +1,200 @@
+App\Entity\AnswerPlaceholder:
+  answer_placeholder_1:
+    text: Strongly Agree
+    question: '@choice_question_1'
+
+  answer_placeholder_2:
+    text: Agree
+    question: '@choice_question_1'
+
+  answer_placeholder_3:
+    text: Neutral
+    question: '@choice_question_1'
+
+  answer_placeholder_4:
+    text: Disagree
+    question: '@choice_question_1'
+
+  answer_placeholder_5:
+    text: Strongly Disagree
+    question: '@choice_question_1'
+
+  answer_placeholder_6:
+    text: Strongly Agree
+    question: '@choice_question_2'
+
+  answer_placeholder_7:
+    text: Agree
+    question: '@choice_question_2'
+
+  answer_placeholder_8:
+    text: Neutral
+    question: '@choice_question_2'
+
+  answer_placeholder_9:
+    text: Disagree
+    question: '@choice_question_2'
+
+  answer_placeholder_10:
+    text: Strongly Disagree
+    question: '@choice_question_2'
+
+  answer_placeholder_11:
+    text: Strongly Agree
+    question: '@choice_question_3'
+
+  answer_placeholder_12:
+    text: Agree
+    question: '@choice_question_3'
+
+  answer_placeholder_13:
+    text: Neutral
+    question: '@choice_question_3'
+
+  answer_placeholder_14:
+    text: Disagree
+    question: '@choice_question_3'
+
+  answer_placeholder_15:
+    text: Strongly Disagree
+    question: '@choice_question_3'
+
+  answer_placeholder_16:
+    text: Strongly Agree
+    question: '@choice_question_4'
+
+  answer_placeholder_17:
+    text: Agree
+    question: '@choice_question_4'
+
+  answer_placeholder_18:
+    text: Neutral
+    question: '@choice_question_4'
+
+  answer_placeholder_19:
+    text: Disagree
+    question: '@choice_question_4'
+
+  answer_placeholder_20:
+    text: Strongly Disagree
+    question: '@choice_question_4'
+
+  answer_placeholder_21:
+    text: Excellent
+    question: '@rating_question_5'
+
+  answer_placeholder_22:
+    text: Very Good
+    question: '@rating_question_5'
+
+  answer_placeholder_23:
+    text: Good
+    question: '@rating_question_5'
+
+  answer_placeholder_24:
+    text: Acceptable
+    question: '@rating_question_5'
+
+  answer_placeholder_25:
+    text: Poor
+    question: '@rating_question_5'
+
+  answer_placeholder_26:
+    text: Strongly Agree
+    question: '@choice_question_6'
+
+  answer_placeholder_27:
+    text: Agree
+    question: '@choice_question_6'
+
+  answer_placeholder_28:
+    text: Neutral
+    question: '@choice_question_6'
+
+  answer_placeholder_29:
+    text: Disagree
+    question: '@choice_question_6'
+
+  answer_placeholder_30:
+    text: Strongly Disagree
+    question: '@choice_question_6'
+
+  answer_placeholder_31:
+    text: Strongly Agree
+    question: '@choice_question_7'
+
+  answer_placeholder_32:
+    text: Agree
+    question: '@choice_question_7'
+
+  answer_placeholder_33:
+    text: Neutral
+    question: '@choice_question_7'
+
+  answer_placeholder_34:
+    text: Disagree
+    question: '@choice_question_7'
+
+  answer_placeholder_35:
+    text: Strongly Disagree
+    question: '@choice_question_7'
+
+  answer_placeholder_36:
+    text: Strongly Agree
+    question: '@choice_question_8'
+
+  answer_placeholder_37:
+    text: Agree
+    question: '@choice_question_8'
+
+  answer_placeholder_38:
+    text: Neutral
+    question: '@choice_question_8'
+
+  answer_placeholder_39:
+    text: Disagree
+    question: '@choice_question_8'
+
+  answer_placeholder_40:
+    text: Strongly Disagree
+    question: '@choice_question_8'
+
+  answer_placeholder_41:
+    text: Strongly Agree
+    question: '@choice_question_9'
+
+  answer_placeholder_42:
+    text: Agree
+    question: '@choice_question_9'
+
+  answer_placeholder_43:
+    text: Neutral
+    question: '@choice_question_9'
+
+  answer_placeholder_44:
+    text: Disagree
+    question: '@choice_question_9'
+
+  answer_placeholder_45:
+    text: Strongly Disagree
+    question: '@choice_question_9'
+
+  answer_placeholder_46:
+    text: Excellent
+    question: '@rating_question_6'
+
+  answer_placeholder_47:
+    text: Very Good
+    question: '@rating_question_6'
+
+  answer_placeholder_48:
+    text: Good
+    question: '@rating_question_6'
+
+  answer_placeholder_49:
+    text: Acceptable
+    question: '@rating_question_6'
+
+  answer_placeholder_50:
+    text: Poor
+    question: '@rating_question_6'

@@ -1,0 +1,7 @@
+App\Entity\TermsOfService:
+  terms_of_service_1:
+    text: <identity('<b>Info:</b>
+            <br><br>
+            We or our licensors are the exclusive owners of all copy, software, graphics, designs and all copyrights, trademarks and other intellectual property or proprietary rights contained on or used in connection with the Site.
+            <br><br>
+            Your use of the Site grants no rights to You in relation to copyright, trade marks or other of Our intellectual property rights or the intellectual property rights of third parties.')>

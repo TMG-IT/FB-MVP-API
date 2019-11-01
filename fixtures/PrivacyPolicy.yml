@@ -1,0 +1,9 @@
+App\Entity\PrivacyPolicy:
+  privacy_policy_1:
+    text: <identity('<b>Mind Gym Privacy Notice:</b>
+            <br><br>
+           Mind Gym plc (“we“) are committed to protecting and respecting your privacy.
+           <br><br>
+           <b>Contact:</b>
+           <br><br>
+           Questions, comments and requests regarding this privacy notice are welcomed and should be addressed to Legal&#64;themindgym.com')>
